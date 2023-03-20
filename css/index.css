@@ -1,0 +1,754 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --colorLetras: #f41888;
+}
+/*menu*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e172f;
+}
+nav button{
+    border: none;
+    height: 40px;
+    width: 120px;
+    color: white;
+    background:linear-gradient(to right, #883fd5, #0c7bd5);
+    border-radius: 5px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    color: #807b8a;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+#contenedor1{
+    padding-right: 15px;
+}
+/*termina el menu*/
+
+/*primera parte*/
+/*izquierda*/
+#primero-parte{
+    display: flex;
+    background-color: #2e2550;
+}
+#izquierda{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    height: 650px;
+    width: 100%;
+    background-color: #2e2550;
+    float:none;
+}
+#izquierda h1{
+    height: 165px;
+    color: white;
+    font-size: 50px;
+}
+#izquierda p{
+    height: 60px;
+    line-height: 23px;
+    color: white;
+}
+#contenedor2{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 40px;
+    width: 265px;
+    border: solid 1px #494267;
+    border-radius: 10px;
+}
+
+#contenedor2 button{
+    width: 130px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#descarga{
+    color: #e23c92;
+}
+#factura{
+    color: white;
+    background-color: transparent;
+}
+/*fin izquierdo*/
+
+/*derecho*/
+#derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(/img/hojarasca.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.5;
+}
+#derecha div{
+    width: 50%;
+}
+/* fin derecha */
+
+/* segunda parte */
+#segunda-parte{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2f7;
+}
+#segunda-parte h2{
+    text-align: center;
+    height: 10%;
+    width: 70%;
+    font-size: 40px;
+    color: #f41486;
+}
+#segunda-parte article h3{
+    height: 60%;
+}
+
+#segunda-parte article li{
+    font-size: 13px;
+}
+
+#segunda-parte article p{
+    font-size: 13px;
+}
+
+#contenidos{
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+
+.precios-planes .elemento .precios #info {
+    width: 130px;
+}
+
+article h3{
+    color: #f41486;
+   text-align: center;
+   font-size: 40px;
+   font-weight: 200;
+}
+article h4{
+    margin: 15px 0px;
+    color: #df328b;
+    font-weight: 200px;
+    font-size: 20px;
+}
+.diseño ul{
+    list-style: none;
+    padding: 0;
+}
+.diseño li::before{
+    content: url(/img/Check.png);
+    margin-right: 5px;
+}
+/* FIN SEGUNDA PARTE */
+
+/* TERCERA PARTE */
+#tercera-parte{
+    background-color: #1e172f;
+    height: 850px;
+}
+#contenedor-3{
+    display: flex;
+    justify-content: center;
+}
+#texto{
+    height: 110px;
+    text-align: center;
+    color: #ffffff;
+}
+#contenedor-3 h3{
+    text-align: center;
+    height: 85px;
+    padding: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+/* Planes y precios */
+
+.precios-planes{
+    font-size: 20px;
+    background-color: #1e172f;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0px;
+}
+
+/* Texto planes y precios */
+
+.precios-planes .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.precios-planes .texto h2{
+    font-size: 60px;
+    color: white;
+}
+
+.precios-planes .texto p{
+    color:#a0a0a0;
+    width: 780px;
+    text-align: center;
+}
+
+/* Elementos Planes y precios */
+
+.precios-planes .elementos{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.precios-planes .elementos .elemento{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    color: #7a7683;
+    background-color: white;
+    border-radius: 7px;
+    padding-top: 10px;
+}
+
+.precios-planes .elemento h3{
+    color: #35304c;
+}
+
+/* Precios Planes y precios*/
+
+.precios-planes .elemento .precios{
+    background-color: #f5f5f5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.precios-planes .elemento .precios .valor{
+    text-align: center;
+    display: flex;
+}
+
+.precios-planes .elemento .precios #precio{
+    font-size: 50px;
+    color:#292929;
+}
+
+.precios-planes .elemento .precios #info{
+    width: 130px;
+}
+
+.precios-planes .elemento .precios p{
+    width: auto;
+}
+
+.precios-planes .elemento .lista{
+    display: flex;
+    gap: 30px;
+}
+
+.precios-planes .elemento li{
+    list-style: none;
+    width: 185px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+}
+
+.precios-planes .elemento i{
+    width: 20px;
+    color: #292929;
+}
+
+.precios-planes .elementos .elemento .textos p{
+    width: 250px;
+    text-align: center;
+}
+
+/* Precios-planes elemento lite */
+
+.precios-planes #lite h3{
+    color: var(--colorLetras);
+}
+
+.precios-planes .listas-lite i{
+    color: var(--colorLetras);
+}
+
+
+.precios-planes #lite #subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ec5ea7, #f41787);
+    width: 180px;
+    height: 45px;
+    border-radius: 3px;
+    color:#e4e4e4;
+}
+
+/* Boton Precios planes */
+
+.precios-planes .boton{
+    background-color: #f5f5f5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.precios-planes .elementos .elemento #subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2550;
+    width: 180px;
+    height: 45px;
+    border-radius: 3px;
+    color:#e4e4e4;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contenido{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info{
+    font-size: 20px;
+    color:#777381;
+}
+
+footer .info a{
+    color:#c2558e;
+}
+
+footer .redes{
+    display: flex;
+    gap: 20px;
+}
+
+footer .redes a{
+    color: #3f3f3f;
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+
+@media  screen and  (max-width: 1024px){
+
+    body {
+        max-width: 100%;
+        
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #1e172f;
+    }
+
+    #contenedor1 {
+        padding-right: 48px;
+
+    }
+
+    .precios-planes .elemento .precios #info {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .precios-planes .elemento .precios #precio {
+        font-size: 25px;
+
+    }
+
+    .precios-planes .elemento .precios .valor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .precios-planes .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .precios-planes .texto p {
+        font-size: 15px;
+    }
+
+    .precios-planes .elementos .elemento {
+        width: 31%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+        color: #7a7683;
+        background-color: white;
+        border-radius: 7px;
+        padding-top: 10px;
+    }
+
+    .precios-planes .elementos .elemento .textos p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .precios-planes .elemento li {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .precios-planes #lite #subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .precios-planes .elementos .elemento #subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    footer .info {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .contenido{
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+    }
+    
+    footer .redes{
+        display: flex;
+    }
+    
+ 
+}
+
+@media screen and (max-width: 992px) {
+
+    body{
+        max-width: 100%;
+    }
+
+    #derecha {
+        width: 66%;
+    }
+
+    #izquierda h1 {
+        height: 35%;
+        color: white;
+        font-size: 50px;
+    }
+
+    #izquierda p {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+
+
+    #contenedor1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-right: 170px;
+    }
+
+    nav button {
+        border: none;
+        height: 40px;
+        width: 120px;
+    }
+
+    header nav a{
+        font-size: 10px;
+    } 
+
+    header nav img {
+        width: 20%;
+        height: 20%;
+        flex-wrap: wrap;
+    } 
+
+    .precios-planes .elementos .elemento {
+        padding: 2px 33px 0 33px;        
+        width: 210px;
+    }
+
+    .precios-planes .elemento .precios {
+        width: 276px;
+    }
+
+    .precios-planes .boton {
+        width: 276px;
+    }
+
+    .precios-planes .elementos {
+        flex-wrap: wrap;    
+        gap: 30px;
+    }
+
+    .precios-planes .texto p {
+        width: 400px;
+        font-size: 12px;
+    }
+
+    .precios-planes .elementos .elemento .textos p {
+        font-size: 12px;
+    }
+
+    .fa-star:before {
+        content: "\f005";
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
+    .precios-planes .elemento li {
+        font-size: 12px;
+    }
+
+    #laptop{
+        display: none;
+    }
+
+    footer .info {
+        font-size: 12px;
+    }
+
+    #derecha {
+    display: none;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    body{
+        max-width: 100%;
+    }
+
+    #derecha{
+        display: none;
+    }
+
+    header nav img {
+        width: 24%;
+        height: 20%;
+        flex-wrap: wrap;
+    } 
+
+    header nav a{
+        font-size: 10px;
+    } 
+
+    nav button {
+        border: none;
+        height: 29px;
+        width: 55px;
+        font-size: 10px;
+    }
+
+    #segunda-parte h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #segunda-parte article h3 {
+        font-size: 30px;
+    }
+
+    .precios-planes .texto h2 {
+        font-size: 30px;
+    }
+
+    .precios-planes .texto p {
+        width: 350px;
+        font-size: 12px;
+    }
+
+    footer .contenido{
+        display: flex;
+        /* width: 95%; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .info {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+
+
+
+/* 
+
+}
+*    #izquierda{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100%;
+}
+
+#contenedor1 h1{
+    text-align: center;
+}
+
+#contenedor2{
+    margin-bottom: 20%;
+} 
+
+}
+    
+
+
+
+
+
+
+/*
+     header nav img {
+        width: 12%;
+        height: 20%;
+    } 
+    
+    .precios-planes .elementos .elemento{
+        width: 44%;
+    }
+
+    footer .info{
+        font-size: 15px;
+    }
+
+    #contenidos{
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    #izquierda h1 {
+        height: 30%;
+        color: white;
+        font-size: 50px;
+    }
+
+    #izquierda {
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        height: 650px;
+        width: 109%;
+    }
+
+.precios-planes .texto h2{
+        font-size: 45px;
+    }
+
+    .precios-planes .texto p{
+        font-size: 17px;
+    } */
+/* 
+
+}
+*    #izquierda{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100%;
+}
+
+#contenedor1 h1{
+    text-align: center;
+}
+
+#contenedor2{
+    margin-bottom: 20%;
+} */
