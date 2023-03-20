@@ -520,10 +520,22 @@ footer .redes a{
         justify-content: flex-start;
         width: 100%;
     }
+
+    .precios-planes .texto p {
+        font-size: 15px;
+        width: 500px;
+    }
     
 }
 
 @media screen and (max-width: 700px){
+
+    #izquierda {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
 
     #contenedor1{
@@ -532,17 +544,28 @@ footer .redes a{
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding-right: 170px;
+        padding: 0px 5px 0px 5px;
+    }
+
+    #segunda-parte h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .precios-planes .texto h2 {
+        font-size: 40px;
+        text-align: center;
+        color: white;
     }
 
     nav button {
         border: none;
-        height: 40px;
-        width: 120px;
+        height: 29px;
+        width: 79px;
     }
 
     header nav a{
-        font-size: 10px;
+        font-size: 12px;
     } 
 
     header nav img {
@@ -650,7 +673,6 @@ footer .redes a{
 
     footer .contenido{
         display: flex;
-        /* width: 95%; */
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -662,93 +684,3 @@ footer .redes a{
     }
     
 }
-
-
-
-
-/* 
-
-}
-*    #izquierda{
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    height: 100%;
-}
-
-#contenedor1 h1{
-    text-align: center;
-}
-
-#contenedor2{
-    margin-bottom: 20%;
-} 
-
-}
-    
-
-
-
-
-
-
-/*
-     header nav img {
-        width: 12%;
-        height: 20%;
-    } 
-    
-    .precios-planes .elementos .elemento{
-        width: 44%;
-    }
-
-    footer .info{
-        font-size: 15px;
-    }
-
-    #contenidos{
-        padding-bottom: 25px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
-
-    #izquierda h1 {
-        height: 30%;
-        color: white;
-        font-size: 50px;
-    }
-
-    #izquierda {
-        display: flex;
-        align-items:center ;
-        justify-content: center;
-        height: 650px;
-        width: 109%;
-    }
-
-.precios-planes .texto h2{
-        font-size: 45px;
-    }
-
-    .precios-planes .texto p{
-        font-size: 17px;
-    } */
-/* 
-
-}
-*    #izquierda{
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    height: 100%;
-}
-
-#contenedor1 h1{
-    text-align: center;
-}
-
-#contenedor2{
-    margin-bottom: 20%;
-} */
